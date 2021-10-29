@@ -1,0 +1,22 @@
+{% extends 'html/base.html' %}
+
+{% block content %}
+
+<div class="d-flex justify-content-center p-2 ">
+    <div>
+        <h2>Names of Employee</h2>
+        <div >
+        {% for empl in employee %}
+        <ul class="p-2 mb-2 bg-info text-white">
+            <li><a href="{% url 'detail-view' empl.id %}">{{empl.name}}</a> </li>
+
+        </ul>
+        {% endfor %}
+    </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+

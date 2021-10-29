@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dashboard</title>
+</head>
+<body>
+    <h3>this is {{uni_prod}}</h3>
+
+    <h2>name is {{user}}</h2>
+    {% for prod in products %}
+
+    <ul>
+        <a href="{% url 'detail_view' prod.id %}"><li>{{prod.name}}</li></a>
+<!--        <li>{{prod.price}}</li>-->
+<!--        <li>{{prod.description}}</li>-->
+    </ul>
+
+
+    {% endfor %}
+
+
+</body>
+</html>
+

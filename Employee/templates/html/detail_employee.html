@@ -1,0 +1,39 @@
+{% extends 'html/base.html' %}
+
+{%  block content %}
+
+
+
+
+
+<div>
+
+    <div class="p-3 mb-2 bg-primary text-white">
+
+        <div>The employee: <b>{{detail.name}}</b> and those is his details</div>
+
+
+        <div>
+            <ul>
+        <li>{{detail.name}} </li>
+        <li>{{detail.age}} </li>
+        <li>{{detail.department}}</li>
+        <li>{{detail.language}} </li>
+        <li>{{detail.is_married}} </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <div>
+        <button></button>
+    </div>
+
+
+</div>
+
+
+
+{% endblock %}
+
